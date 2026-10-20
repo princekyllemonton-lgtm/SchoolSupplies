@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Items</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+
+        <div class="logo">
+            School Supplies
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="about.html">About</a>
+        </div>
+
+    </nav>
+
+    <section class="product-page">
+
+      
+        <div class="product-image">
+
+            <img src="era.webp" alt="RETON 30 Pack Pencil Eraser, Soft White Erasers , Erase Easily Eraser Bulk for Artists Teachers Drawing Office (2 x 0.70 x 0.4inch)">
+
+        </div>
+
+    <div class="product-info">
+
+            <h1>
+                RETON 30 Pack Pencil Eraser, Soft White Erasers , Erase Easily Eraser Bulk for Artists Teachers Drawing Office (2 x 0.70 x 0.4inch)
+            </h1>
+
+            <h2>₱10.00 PHP</h2>
+
+            <p class="quantity-label">Quantity</p>
+
+            <div class="quantity">
+                <button onclick="decreaseQuantity()">−</button>
+
+                <span id="quantity">1</span>
+
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+
+
+            <button class="cart-button">
+                Add to cart
+            </button>
+
+            <button class="buy-button">
+                Buy it now
+            </button>
+
+
+            <div class="description">
+
+                <h3>Product Description</h3>
+
+                <p>           
+                    RETON 30 Pack Pencil Eraser, Soft White Erasers , 
+                    Erase Easily Eraser Bulk for Artists Teachers Drawing Office (2 x 0.70 x 0.4inch)
+                </p>
+
+            </div>
+
+        </div>
+
+
+    <div class="product-image">
+
+            <img src="sci.jpg" alt="LIVINGO Kids Scissors for School 7" Pointed Tip 3 Pack">
+
+        </div>
+
+         <div class="product-info">
+
+            <h1>
+                LIVINGO Kids Scissors for School 7" Pointed Tip 3 Pack  
+            </h1>
+
+            <h2>₱25.00 PHP</h2>
+
+            <p class="quantity-label">Quantity</p>
+
+            <div class="quantity">
+                <button onclick="decreaseQuantity()">−</button>
+
+                <span id="quantity">1</span>
+
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+
+
+            <button class="cart-button">
+                Add to cart
+            </button>
+
+            <button class="buy-button">
+                Buy it now
+            </button>
+
+
+            <div class="description">
+
+                <h3>Product Description</h3>
+
+                <p>
+                     LIVINGO Kids Scissors for School 7" Pointed Tip 3 Pack
+                    Sharp Stainless Steel Blade, Left Right Handed Design, 
+                    Comfort Grip, Middle School Classroom Projects, Assorted Color
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+          <div class="product-image">
+
+            <img src="r.jpg" alt="HBW Plastic Ruler Transparent 12″ ">
+
+        </div>
+
+         <div class="product-info">
+
+            <h1>
+             HBW Plastic Ruler Transparent 12″
+            </h1>
+
+            <h2>₱16.00 PHP</h2>
+
+            <p class="quantity-label">Quantity</p>
+
+            <div class="quantity">
+                <button onclick="decreaseQuantity()">−</button>
+
+                <span id="quantity">1</span>
+
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+
+
+            <button class="cart-button">
+                Add to cart
+            </button>
+
+            <button class="buy-button">
+                Buy it now
+            </button>
+
+
+            <div class="description">
+
+                <h3>Product Description</h3>
+
+                <p>
+                    HBW Plastic Ruler Transparent 12″
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        function changeQuantity(button, change) {
+        const product = button.closest(".product-info");
+        const quantityDisplay = product.querySelector(".quantity-value");
+
+        let quantity = parseInt(quantityDisplay.textContent);
+
+        quantity += change;
+
+        if (quantity < 1) {
+            quantity = 1;
+        }
+
+        quantityDisplay.textContent = quantity;
+    }
+    </script>
+
+
+    
+          <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>CUSTOMER SERVICE</h3>
+
+                <a href="services.html">Help Centre</a>
+                <a href="services.html">Contact Us</a>
+                <a href="services.html">Payment Methods</a>
+                <a href="services.html">Order Tracking</a>
+                <a href="services.html">Return & Refund</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>ABOUT SCHOOL SHOP</h3>
+
+                <a href="about.html">About Us</a>
+                <a href="dashboard.html">Our Products</a>
+                <a href="dashboard.html">School Supplies</a>
+                <a href="about.html">Privacy Policy</a>
+                <a href="about.html">Terms & Conditions</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>PAYMENT</h3>
+
+                <div class="payment-methods">
+                    <span>GCash</span>
+                    <span>Maya</span>
+                    <span>Visa</span>
+                    <span>Mastercard</span>
+                    <span>BPI</span>
+                    <span>BDO</span>
+                </div>
+
+                <h3 class="logistics-title">LOGISTICS</h3>
+
+                <div class="logistics">
+                    <span>J&T</span>
+                    <span>SPX</span>
+                    <span>LBC</span>
+                    <span>2GO</span>
+                </div>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>FOLLOW US</h3>
+
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">YouTube</a>
+            </div>
+
+
+            <div class="footer-column app-column">
+                <h3>OUR APP</h3>
+
+                <div class="qr-placeholder">
+                    QR CODE
+                </div>
+
+                <div class="app-buttons">
+                    <a href="#">App Store</a>
+                    <a href="#">Google Play</a>
+                    <a href="#">App Gallery</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 School Supplies. All Rights Reserved.
+            </p>
+
+            <div class="regions">
+                <span>Country & Region:</span>
+                <a href="#">Philippines</a>
+                <a href="#">Singapore</a>
+                <a href="#">Malaysia</a>
+                <a href="#">Indonesia</a>
+                <a href="#">Thailand</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
